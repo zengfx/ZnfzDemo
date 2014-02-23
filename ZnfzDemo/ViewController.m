@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZnfzMainViewController.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickMe:(id)sender {
+    ZnfzMainViewController *viewcontroller = [[ZnfzMainViewController alloc] initWithNibName:@"ZnfzMainViewController" bundle:nil];
+    [self.navigationController pushViewController:viewcontroller animated:YES];
+}
 @end
